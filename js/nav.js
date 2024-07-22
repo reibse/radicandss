@@ -37,14 +37,18 @@ var y = document.getElementById('sign-in');
 var z = document.getElementById('btn');
 
     function register(){
-        x.style.marginTop = "50px"
-        y.style.marginTop = "-290px"
+        x.style.padding  = "10px 0"
+        x.style.marginTop = "100px"
+        y.style.marginTop = "-320px"
+        y.style.padding = "0px"
         z.style.left = "113px"
     }
 
     function login(){
-        x.style.marginTop = "340px"
-        y.style.marginTop = "50px"
+        x.style.marginTop = "0px"
+        x.style.padding = "0px"
+        y.style.marginTop = "0px"
+        y.style.padding = "80px 0"
         z.style.left = "0px"
     }
 
