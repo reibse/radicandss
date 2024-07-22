@@ -38,7 +38,7 @@ var z = document.getElementById('btn');
 
     function register(){
         x.style.marginTop = "0px"
-        y.style.marginTop = "-225px"
+        y.style.marginTop = "-200px"
         z.style.left = "118px"
     }
 
