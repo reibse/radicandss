@@ -955,12 +955,14 @@ h3{
     accent-color: #161501;
 }
 #sign-in{
+    position: relative;
     margin-top: 50px;
     margin-bottom: 70px;
     transition: 0.7s;
 }
 
 #sign-up{
+    position: relative;
     padding-top: 10px;
     transition: 0.7s;
 }
