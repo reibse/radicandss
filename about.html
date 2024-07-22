@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radicands | Cluster of Applied Mathematics </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Radicands | About </title>
+    <link rel="icon" href="images/logo-full.png">
+    <link rel="stylesheet" href="css\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -18,10 +19,11 @@
                 <i class="fa-solid fa-xmark" onclick="hideMenu()" "></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="about.html"  id="lnk">ABOUT</a></li>
                     <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    <a href="account.html"><button>LOG IN</button></a>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -66,29 +68,6 @@
         <p> Made by  <i class="fa-regular fa-heart"></i>  Jethro Bernal</p>
     </section>
 <!-----java script for toggle menu---->
-<script>
-    var navLinks = document.getElementById("navLinks")
-
-    function showMenu(){
-        navLinks.style.right = "-180px";
-    }
-
-    function hideMenu(){
-        navLinks.style.right = "-380px";
-    }
-
-    document.addEventListener('scroll', () =>{
-        const nav = document.querySelector('nav');
-
-        if (window.scrollY > 0){
-            console.log('scrolled down')
-            nav.classList.add('scrolled')
-        }
-        else {
-            console.log('back at top')
-            nav.classList.remove('scrolled')
-        }
-    })
-</script>
+<script src="../WebsiteRad/js/nav.js"></script>
 </body>
 </html>

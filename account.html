@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radicands | Login </title>
+    <link rel="icon" href="images/logo-full.png">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo-name-white.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" "></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <a href="account.html" ><button id="lnk0">LOG IN</button></a>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <section class="header">
+        <div class="container">
+            <div class="box-form">
+                <!------------------------Sign In-------------------------->
+                <form method="post" id="sign-in" action="php/register.php">
+                    <h1 class="form-title">Log In</h1>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" id="email" placeholder="Email Adress" class="input-field" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="Password" class="input-field" required>
+                    </div>
+                    <p class="recover">
+                        <a href="#">Recover Password</a>
+                    </p>
+                    <input type="submit" class="hero-btn2" value="Sign In" name="signIn">
+                </form>
+                <!------------------------Sign uP-------------------------->
+                <form method="post" id="sign-up" action="php/register.php">
+                    <h1 class="form-title">Register</h1>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="fName" id="fName" placeholder="First Name" class="input-field" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" class="input-field" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" id="email" placeholder="Email" class="input-field" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="Password" class="input-field" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" class="check-box" id="cbc" required>
+                        <span>I agree to Terms and Condition</span>
+                    </div>
+                    <input type="submit" class="hero-btn2" value="Sign Up" name="signUp" class="hero-btn">
+                </form>
+            </div>
+            <div class="icons2">
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <p>Login Using your CVSU account</p>
+            <div class="links">
+                <div id="btn"></div>
+                <button id="signUpButton" class="toggle-btn" onclick="login()">Log in</button>      
+                <button id="signUpButton" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+        </div>
+<!------------------------FOOOTER-------------------------->
+        </div>
+        <div class="footer-login">
+            <h4>About Us</h4>
+            <p>Lorem ipsum Elected</p>
+            <div class="login-icon">
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-instagram"></i>
+           </div>
+           <p> Made by  <i class="fa-regular fa-heart"></i>  Jethro Bernal</p>
+        </div>
+    </section>
+<!-----java script for toggle menu---->
+<script src="../WebsiteRad/js/nav.js"></script>
+</body>
+</html>
