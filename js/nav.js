@@ -37,7 +37,7 @@ var y = document.getElementById('sign-in');
 var z = document.getElementById('btn');
 
     function register(){
-        x.style.padding  = "18px 0"
+        x.style.padding  = "7px 0"
         x.style.marginTop = "100px"
         y.style.marginTop = "-320px"
         y.style.padding = "0px"
