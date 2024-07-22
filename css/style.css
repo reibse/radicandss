@@ -959,6 +959,7 @@ h3{
 }
 
 #sign-up{
+    padding-top: 10px;
     margin-top: 120px;
     transition: 0.7s;
 }
