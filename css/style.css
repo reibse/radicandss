@@ -64,7 +64,7 @@
       background-position-x: 0;
     }
     100% {
-      background-position-x: 300%;
+      background-position-x: 329.8%;
     }
   }
 /*.header{
@@ -314,7 +314,9 @@ nav .fa-solid{
     font-weight: 700;
     margin-top: 0;
 }
-
+.course img{
+    padding: 5px 0;
+}
 .course-sub p,
 .course p{
     color: black;
@@ -659,11 +661,14 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/bg-2.png');
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/bg-3.png');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     text-align: center;
+    animation: slideshow 30s linear infinite;
 }
+
+
 .sub-header h1{
     font-size: 50px;
     margin-bottom: 400px;
@@ -692,6 +697,8 @@ h3{
     height: auto;
     border-radius: 10px;
 }
+
+
 .about-us-col h1{
     font-size: 60px;
     margin-bottom: 450px;
@@ -725,6 +732,9 @@ h3{
         width: 100%;
         padding-top: 10px;
     }
+    .sub-header{
+        animation: slideshow 70s linear infinite;
+    }
 
 }
 
@@ -746,7 +756,7 @@ h3{
 .blog-right img,
 .blog-left img{
     width: 100%;
-    border-radius: 5px; 
+    border-radius: 10px; 
 }
 .course h1{
     padding-top: 30px;
@@ -1136,6 +1146,9 @@ img {vertical-align: middle;}
   background-color: #ffbb00;
 }
 
+
+
+
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -1144,8 +1157,8 @@ img {vertical-align: middle;}
   
   @keyframes fade {
     from {
-      opacity: .4;
-      transform: translateY(10px); /* Starts 20px below */
+      opacity: 0.4;
+      transform: translateY(25px); /* Starts 20px below */
     } 
     to {
       opacity: 1;
@@ -1157,3 +1170,103 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+/*=================================FAQS====================================*/
+
+.body1{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.849),rgba(75, 45, 0, 0.575)), url(../images/bg-2.png);
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-position: center;
+    animation: slideshow 30s linear infinite;
+  }
+  
+  @keyframes slideshow {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 329.8%;
+    }
+}
+
+.body{
+    display: flex;
+}
+
+.faq-section {
+    width: 100%;
+    border-radius: 10px;
+
+  }
+  
+.body1 h2 {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ffffff;
+  }
+  
+  /* FAQ styles */
+  .faq-item {
+    margin: 15px 0;
+  }
+  
+  .faq-question {
+    background-color: #ffd900;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    margin: auto;
+    z-index: 1;
+  }
+  
+  .faq-question:hover {
+    background-color: #ad8e00;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  
+  .faq-answer {
+    display: none;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ffd000;
+    margin-top: 0px;
+    border-radius: 5px;
+    width: 86%;
+    margin: auto;
+
+    
+    animation: slideRight 0.5s ease-out forwards;
+  }
+  
+  /* Slide right animation */
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media(max-width:806px){
+    .body{
+        flex-direction: column;
+        
+    }
+  }
