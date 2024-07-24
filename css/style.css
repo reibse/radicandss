@@ -1,11 +1,16 @@
 /*--------------------DARK MODE-------------------------*/
-
+@media print {
+    html, body {
+       display: none;  /* hide whole page */
+    }
+}
 
 
 /*-------------------------ROWS----------------------*/
 .row{
     margin: 5%;
     justify-content: center;
+    background: transparent;
 
 }
 .row1{
@@ -87,6 +92,7 @@ nav{
     z-index: 3;
     transition: 0.5s;
     background-color: transparent;
+    font-family: "Poppins", sans-serif;
 }
 nav button{
     padding: 3px 10px;
@@ -150,19 +156,19 @@ nav img{
     height: 100%;
 }
 
-.nav-links{
+.nav-links1{
     flex: 1;
     text-align: right;
     padding-right: 180px;
 }
-.nav-links ul li{
+.nav-links1 ul li{
     list-style: none;
     display: inline-block;
     padding: 11px 12px;
     position: relative;
 }
 
-.nav-links ul li a{
+.nav-links1 ul li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 13px;
@@ -171,7 +177,7 @@ nav img{
     font-style: normal;
 }
 
-.nav-links ul li::after{
+.nav-links1 ul li::after{
     content:'';
     width: 0%;
     height: 2px;
@@ -181,7 +187,7 @@ nav img{
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+.nav-links1 ul li:hover::after{
     width: 100%;
 }
 
@@ -251,10 +257,10 @@ nav .fa-solid{
         font-size: 10px;
         color: white;
     }
-    .nav-links ul li{
+    .nav-links1 ul li{
         display: block;
     }
-    .nav-links{
+    .nav-links1{
         position: absolute;
         background: rgb(24, 19, 13);
         height: 100vh;
@@ -678,8 +684,8 @@ h3{
 .about-us{
     width: 80%;
     margin: auto;
-    padding-top: 50px;
-}
+    padding-top: 70px;
+}   
 
 .about-us-col{
     flex-basis: 48%;
@@ -708,6 +714,7 @@ h3{
     text-align: left;
     margin: 10px;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .about-us-col p{
@@ -730,7 +737,7 @@ h3{
     }
     .about-us-col0{
         width: 100%;
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .sub-header{
         animation: slideshow 70s linear infinite;
@@ -1182,6 +1189,7 @@ img {vertical-align: middle;}
     border-radius: 20px;
     background-position: center;
     animation: slideshow 30s linear infinite;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
   }
   
   @keyframes slideshow {
@@ -1206,10 +1214,17 @@ img {vertical-align: middle;}
 .body1 h2 {
     padding-top: 20px;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 50px;
     color: #ffffff;
   }
+
+.body1 p{
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
   
   /* FAQ styles */
   .faq-item {
@@ -1222,7 +1237,7 @@ img {vertical-align: middle;}
     padding: 10px;
     width: 90%;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     text-align: left;
     font-size: 16px;
     cursor: pointer;
@@ -1237,7 +1252,12 @@ img {vertical-align: middle;}
     color: #ffffff;
     transition: 0.5s;
   }
-  
+  .faq-answer p{
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+
+}
   .faq-answer {
     display: none;
     overflow: hidden;
@@ -1245,7 +1265,7 @@ img {vertical-align: middle;}
     background-color: #f9f9f9;
     border-left: 3px solid #ffd000;
     margin-top: 0px;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
     width: 86%;
     margin: auto;
 
@@ -1267,6 +1287,147 @@ img {vertical-align: middle;}
   @media(max-width:806px){
     .body{
         flex-direction: column;
-        
+    }
+    .about-us-col p{
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .body1 h2{
+        font-size: 40px;
+    }
+    .body1 p{
+        font-size: 15px;
+    }
+    .about-us-col h3{
+        margin: 0;
+        padding: 0;
+    }
+    .faq-answer{
+        width: 81.4%;
     }
   }
+
+  /*========================DPS========================*/
+  .dps-page{
+    padding-top: 100px;
+    margin: auto;
+    margin-top: 100px;
+    background-image: linear-gradient(#16150100,#161501), url(../images/DPS/dps.png);
+    background-position: center;
+    background-size: contain;
+  }
+  .dps-content{
+    margin: 0;
+    padding: 0;
+  }
+  .dps1{
+    margin: 0 10%;
+  }
+  .dps{
+    width: 100%;
+    background: #161501;
+    display: flex;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .dps-page h3{
+    margin: 0;
+    padding: 0 0 30px 0;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(221, 221, 221);
+  }
+
+  .dps-page p{
+    padding: 0;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(255, 196, 0);
+  }
+
+ .left-dps{
+    width: 40%;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+    padding-left: 10%;
+    margin-right: 10px;
+    
+  }
+  .left-dps div{
+    display: flex;
+    align-items: center;
+  }
+  .left-dps h5{
+    color: white;
+    font-size: 25px;
+  }
+  .left-dps p{
+    color: white;
+    padding: 0;
+    padding-left: 33px;
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  
+  .left-dps .fa-solid{
+    color: rgba(255, 174, 0, 0.993);
+    font-size: 20px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+  }
+
+  .right-dps{
+    width: 58%;
+    border-radius: 0px 10px 10px 0;
+    margin: 0;
+    padding-right: 5%;
+  }
+
+  .right-dps iframe{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.527);
+    border-radius: 10px;
+  }
+
+
+  @media(max-width:806px){
+    .dps-page{
+        padding-top: 56px;
+    }
+    .dps{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .left-dps{
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .left-dps.fa-solid{
+        padding-bottom: 0px;
+    }
+    .left-dps,
+    .right-dps{
+        width: 80%;
+        margin: auto;
+        border-radius: 0px;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .left-dps  h5{
+        font-size: 18px;
+    }
+    .right-dps iframe{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .dps-page h3{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+}
+

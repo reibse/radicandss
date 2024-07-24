@@ -54,7 +54,7 @@ var z = document.getElementById('btn');
 
 
     let slideIndex = 1;
-    showSlides(slideIndex);
+      showSlides(slideIndex);
     
     function plusSlides(n) {
       showSlides(slideIndex += n);
@@ -83,6 +83,7 @@ var z = document.getElementById('btn');
   //---------------------POP UP SCRIPT FOR FAQS------------------//
  
   const faqQuestions = document.querySelectorAll('.faq-question');
+  
 
   faqQuestions.forEach(question => {
     question.addEventListener('click', function() {
@@ -101,21 +102,11 @@ var z = document.getElementById('btn');
     });
   });
 
-  //=======================POP UP FOR Curriculum PHOTO==========//
-  var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+  //=======================Prevent Screenshot==========//
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+document.addEventListener("contextmenu",(event)=>{
+  event.preventDefault();
+});
+  
     
